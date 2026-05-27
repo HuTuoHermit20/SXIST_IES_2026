@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.12+-blue?logo=python" alt="Python">
+  <img src="https://img.shields.io/badge/Python-3.12.10-blue?logo=python" alt="Python">
   <img src="https://img.shields.io/badge/LangChain-0.3+-green?logo=langchain" alt="LangChain">
   <img src="https://img.shields.io/badge/DeepSeek-v4--flash-purple" alt="DeepSeek">
   <img src="https://img.shields.io/badge/License-MIT-yellow" alt="License">
 </p>
 
-<h1 align="center">🎓 SXIST IES — 山西科技学院智能招生助手</h1>
+<h1 align="center">SXIST IES 2026 — 山西科技学院智能招生系统</h1>
 
 <p align="center">
   <strong>AI-Powered Admissions Q&A Agent</strong><br>
@@ -14,17 +14,17 @@
 
 ---
 
-## ✨ 亮点
+## 亮点
 
-- **零幻觉数据** — 所有回答均基于官网实时抓取，绝不胡编乱造
-- **三级深爬** — 首页 → 子页面 → 教师详情/文章正文，逐级穿透
+- **低幻觉数据** — 所有回答均基于官网实时抓取，绝不胡编乱造
+- **三级深爬** — 首页 → 子页面 → 文章正文，逐级穿透
 - **JS SPA 穿透** — 招生站子页面为纯 JS 渲染，独创三层缓存架构绕过
 - **多轮记忆** — 基于 InMemorySaver 的对话状态持久化
-- **13 学院全覆盖** — 关键词自动匹配对应学院官网，教师研究方向逐个深扒
+- **13 学院全覆盖** — 关键词自动匹配对应学院官网
 
 ---
 
-## 🏗️ 架构
+## 架构
 
 ```
 用户输入 (agent_main.py)
@@ -61,11 +61,11 @@
 └──────────────────────────────────────────┘
 ```
 
-## 🚀 快速开始
+## 快速开始
 
 ### 环境要求
 
-- Python 3.12+
+- Python 3.12.10
 - DeepSeek API Key
 
 ### 安装
@@ -123,7 +123,7 @@ python agent_main.py
 
 ---
 
-## 📂 项目结构
+## 项目结构
 
 ```
 SXIST_IES_2026/
@@ -133,7 +133,7 @@ SXIST_IES_2026/
 ├── admissions_cache.py    # 招生站 JS SPA 预渲染数据缓存
 ├── test_full.py           # 端到端回归测试
 ├── .env                   # API Key 配置（不提交）
-└── .idea/                 # PyCharm 项目配置
+└── .idea/                 # PyCharm 项目配置（不提交）
 ```
 
 ### 文件职责
@@ -147,7 +147,7 @@ SXIST_IES_2026/
 
 ---
 
-## 🔧 核心设计
+## 核心设计
 
 ### 1. Thinking Mode 关闭
 
@@ -204,7 +204,7 @@ bkzs.sxist.edu.cn 的 6 个子页面全部是 JS 空壳 (<script>location.href=.
 
 ---
 
-## 🧪 测试
+## 测试
 
 ```bash
 python test_full.py
@@ -233,7 +233,7 @@ python test_full.py
 
 ---
 
-## 📄 License
+## License
 
 MIT © 2025
 
